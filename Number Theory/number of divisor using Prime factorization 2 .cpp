@@ -55,7 +55,7 @@ ll nod(ll n)
             res = res * (c + 1);
         }
     }
-    if(n>1)res = res * 2;
+    if(n>1)res = res * (1 + 1);
     return res;
 }
 
