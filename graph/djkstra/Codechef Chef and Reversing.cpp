@@ -62,7 +62,7 @@ void pqprint(priority_queue<info>pq)
          int u = PQ.top().a ;
          //int cc = PQ.top().b ;
          
-         pqprint(PQ) ;
+         //pqprint(PQ) ;
          PQ.pop() ;
          //if(cc != d[u])continue ;
          for(int i = 0 ; i<graph[u].size() ; i++){
