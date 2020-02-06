@@ -35,7 +35,7 @@ struct info{
         a = aa , b = bb ;
     }
     bool operator<(const info& p)const{
-        return b>p.b ;
+        return b>p.b ; // priority queue te ascending sort avabe korte hoy 
     }
 };
 
