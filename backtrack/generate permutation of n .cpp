@@ -14,9 +14,9 @@ void fun(int pos )
         if(used[i] == 0 ){// use kora na hole
             //if(!(pos == 2 && i % 2 == 0)){
                 used[i] = 1 ; // use koro ;
-                number[pos] = i ;
-                fun(pos + 1 ) ;
-                used[i] = 0 ;
+                number[pos] = i ; // position a i bosao 
+                fun(pos + 1 ) ; // ak ghor front a zao
+                used[i] = 0 ; // fire ase abar oita ke unused kore dao 
             //}
         }
     }
