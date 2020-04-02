@@ -19,6 +19,35 @@ using namespace std;
 #define hiii                    1e9//1000000000
 #define looo                   -1e9//-1000000000
 
+#define Booster                ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
+#define _cout(x)               cout << x << endl ;
+#define yes                    cout << "YES" << endl
+#define no                     cout << "NO" << endl
+#define PrintVector(v)         for(auto it : v)cout << it <<' ';cout << endl
+#define ScanVector(v)          for(auto &it:v)cin >> it ;
+
+#define debug(x)                cout << x << "   output" << endl
+#define NMAX                   200005
+
+template< typename T > void dekhao(T val){cout << "template val   is  " << val << endl ;}
+
+
+//
+//
+//int gcd(int n,int m){return m==0?n:gcd(m,n%m);}
+//inline int Set(int n,int pos) { return n = n | (1LL << pos); }
+//inline int Reset(int n,int pos) { return n = n & ~(1LL << pos); }
+//inline bool Check(int n,int pos) { return (bool)(n & (1LL << pos)); }
+//inline int Count(ll n) { return __builtin_popcountll(n); }
+////typedef pair<int,int> pint;
+
+
+/**  top , Right , Down , Left
+int dx[] = {-1,  0 ,+1 , 0 } ;
+int dy[] = { 0, +1 , 0 , -1} ;
+
+**/
+
 /**
 // Ordered set
 #include <ext/pb_ds/assoc_container.hpp>
@@ -40,6 +69,7 @@ tree<T,null_type,less<T>,rb_tree_tag,tree_order_statistics_node_update>;
 struct info
 {
         int val,id;
+	info(){};
         info(int a,int b){
                 val = a;
                 id = b;
@@ -136,11 +166,11 @@ ll mulmod(ll base,ll p)//base, p bar jog mane 3 dia 5 ke gun
     ll res=0;
     base=base%mod;
     while(p>0){
-        if(p%2==1)res=(res+base)%mod;;
+        if(p%2==1)res=(res+base)%mod;
         base=(base*2)%mod;//base=(base+base)%mod;
         p=p/2;
     }
-    return res;
+    return res%mod;
 }
 
 ll bigmod2(ll base,ll p)//base, p bar gun
@@ -166,17 +196,25 @@ ll kache(ll first,ll second,ll terget)
     return second;
 }
 
-int f(int n){//sum of first n number
-    return (n*(n+1))/2;}
 
-ll ceel(ll lob,ll hor){ return ((lob-1)/hor)+1;}// (lob + hor -1) / hor may b hote pare
+
+ll ceel(ll lob,ll hor){ return ((lob-1)/hor)+1;}
+
+
+
+//#define artcell
+void Ekfile()
+{
+    #ifdef artcell
+        freopen("A1.in","r",stdout);
+        freopen("A1.out","w",stdout) ;
+    #endif // scorpion
+}
 
 int main()
 {
-    //ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
     //clock_t startTime = clock() ;
-    //freopen("A1.in","r",stdin);
-    //freopen("A1.out","w",stdout);
+    //Ekfile();
 
     //struct_type arr[101];
     //sort(arr,arr+n,compare);
@@ -187,11 +225,4 @@ int main()
 return 0;
 }
 
-void pri(const vector<int>&v)
-{   cout<<"vector printing "<<endl;
-    for(int i=0;i<v.size();i++){
-        cout<<v[i]<<" ";
-    }
-    cout<<endl<<endl;
-}
 
