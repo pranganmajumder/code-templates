@@ -12,11 +12,12 @@ public:
         node(){};
         node(int x) : data(x) , next(NULL){} ;
     };
-    int len = 0 ;   
-    node* head = NULL , *tail = NULL ;
+    int len  ;   
+    node* head , *tail  ;
     
-    MyLinkedList() {
-        
+    MyLinkedList() { // default constructor 
+        len = 0 ;
+        head = NULL , tail = NULL ;
     }
     
     /** Get the value of the index-th node in the linked list. If the index is invalid, return -1. */
