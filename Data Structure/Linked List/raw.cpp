@@ -6,8 +6,6 @@ int addSum(int a , int b){
     return a+b ;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 void prinMyName(){
     cout << "prangan Majumder " << endl ;
