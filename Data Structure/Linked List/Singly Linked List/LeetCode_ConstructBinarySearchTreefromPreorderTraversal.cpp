@@ -1,6 +1,6 @@
 
 //link  https://leetcode.com/explore/challenge/card/30-day-leetcoding-challenge/530/week-3/3305/
-
+// this is another solution      https://paste.ubuntu.com/p/m8P32nz97f/
 
 /**
  * Definition for a binary tree node.
